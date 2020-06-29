@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hack_flutter/Screens/AboutUs.dart';
 import 'package:hack_flutter/Screens/AwarenessTips.dart';
+import 'package:hack_flutter/Screens/Login.dart';
 import 'package:hack_flutter/services/auth.dart';
 import 'package:hack_flutter/views/homepage.dart';
 
@@ -18,44 +19,36 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: AwarenessTips(),
       drawer: Drawer(
         child: Container(
           color: backcolor,
           child: ListView(
             padding: EdgeInsets.zero,
-            children: <Widget>  [
-
+            children: <Widget>[
               DrawerHeader(
                 decoration: BoxDecoration(
                     color: appbarc,
                     image: DecorationImage(
                         image: AssetImage("images/flame-web-security.png"),
-                        fit: BoxFit.cover
-                    )
-                ),
+                        fit: BoxFit.cover)),
               ),
-
               ListTile(
-                onTap: (){
+                onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => AwarenessTips()));                },
+                      MaterialPageRoute(builder: (context) => AwarenessTips()));
+                },
                 leading: Icon(
                   Icons.account_circle,
                   color: Colors.black,
                 ),
-                title: Text('Users',
-
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold
-                  ),
+                title: Text(
+                  'Users',
+                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
                 ),
-
               ),
               ListTile(
-                onTap: (){
+                onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => HomePage()));
                 },
@@ -65,15 +58,11 @@ class _HomeState extends State<Home> {
                 ),
                 title: Text(
                   'News',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold
-                  ),
+                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
                 ),
               ),
-
               ListTile(
-                onTap:() {
+                onTap: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => AboutUs()));
                 },
@@ -83,17 +72,13 @@ class _HomeState extends State<Home> {
                 ),
                 title: Text(
                   'About Us',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold
-                  ),
+                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
                 ),
-
               ),
               ListTile(
-                onTap: (){
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Ref()));
+                onTap: () {
+                  Navigator.push(
+                      context, MaterialPageRoute(builder: (context) => Ref()));
                 },
                 leading: Icon(
                   Icons.recent_actors,
@@ -101,17 +86,14 @@ class _HomeState extends State<Home> {
                 ),
                 title: Text(
                   'References',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold
-                  ),
+                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
                 ),
-
               ),
               ListTile(
-                onTap: () async{
+                onTap: () async {
                   await _auth.signOut();
-
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Login()));
                 },
                 leading: Icon(
                   Icons.exit_to_app,
@@ -119,18 +101,13 @@ class _HomeState extends State<Home> {
                 ),
                 title: Text(
                   'Logout',
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold
-                  ),
+                  style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
                 ),
-
               ),
-
             ],
           ),
         ),
-
-      ),);
+      ),
+    );
   }
 }

@@ -1,0 +1,4 @@
+#Mon Jun 29 17:45:32 IST 2020
+base.0=G\:\\Programming\\Flutter\\as\\CyAware\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
