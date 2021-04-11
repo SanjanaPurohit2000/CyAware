@@ -1,5 +1,5 @@
 # CyAware
-
+CyAware is an android mobile application which will provide different security awareness tips on "how to prevent Cyber Crimes". There are different awareness tips for different users (teenagers, employees, women, network admin...). This app also provides recent news related to cyber crime.
 
 <table>
   <tr>
@@ -8,7 +8,7 @@
   </tr>
   
   <tr>
-    <td><img src="(https://user-images.githubusercontent.com/64483403/114300147-68671200-9adc-11eb-9a61-ac35d6c9ba4e.jpeg" height=600 width=300></td>
+    <td><img src="https://user-images.githubusercontent.com/64483403/114300147-68671200-9adc-11eb-9a61-ac35d6c9ba4e.jpeg" height=600 width=300></td>
     <td><img src="https://user-images.githubusercontent.com/64483403/114299964-b4fe1d80-9adb-11eb-97d5-64bd6295ca91.jpeg" height=600 width=300></td>
   </tr>
 </table>
