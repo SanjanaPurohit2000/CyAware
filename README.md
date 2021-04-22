@@ -1,5 +1,5 @@
 # CyAware
-CyAware is an android mobile application which will provide different security awareness tips on "how to prevent Cyber Crimes". There are different awareness tips for different users (teenagers, employees, women, network admin...). This app also provides recent news related to cyber crime.
+CyAware is an android mobile application that will provide different security awareness tips on "how to prevent Cyber Crimes". There are different awareness tips for different users (teenagers, employees, women, network admin...). This app also provides recent news related to cybercrime.
 
 <table>
   <tr>
